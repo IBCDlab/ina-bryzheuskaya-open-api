@@ -1,0 +1,64 @@
+/* Mobile-first */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1rem;
+
+}
+
+.header {
+    margin-bottom: 1rem;
+}
+
+#title {
+    margin: 1rem auto;
+}
+
+/* .nav {
+    display: flex;
+    justify-content: center;
+} */
+
+.nav button {
+    cursor: pointer;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(56, 226, 169);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* 1 column */
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card {
+    max-width: 70%;
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: aquamarine;
+}
+
+/* +++ Tablet +++ */
+
+@media (min-width: 768px) {
+    .cards {
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* +++ Desktop +++ */
+@media (min-width: 1024px) {
+    .cards {
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main {
+    max-width: 50%;
+    margin: 0 auto;
+    }
+}
