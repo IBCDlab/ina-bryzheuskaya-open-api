@@ -1,13 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARTIC Project</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <h1>Art Institute of Chicago</h1>
-    <script src="index.js"></script>    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Institute of Chicago</title>
+
+    <!--connecting styles-->
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Art Institute of Chicago</h1>
+      <!--2 button-->
+      <nav class="nav">
+        <button id="button-artworks">Artworks</button>
+        <button id="button-artists">Artists</button>
+      </nav>
+    </header>
+    <main class="main">
+      <section id="Artworks">
+        <h2 id="title">Artworks</h2>
+        <div class="cards"></div>
+      </section>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+  <footer class="footer">
+    <p>Data from the Art Institute of Chicago API</p>
+  </footer>
 </html>
